@@ -64,6 +64,10 @@ a.brand {
   align-items: center;
 }
 
+.fa star-o {
+  background-color: red;
+}
+
 .row.center {
   justify-content: center;
 }
