@@ -53,6 +53,35 @@ a {
 a:hover {
   color: #ff8000;
 }
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li {
+  margin-top: 1rem;
+}
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+button:hover {
+  border: 0.1rem #404040 solid;
+}
+button.primary {
+  background-color: #f0c040;
+}
+button.block {
+  width: 100%;
+}
+
 /* Header */
 header a {
   color: #ffffff;
@@ -72,6 +101,13 @@ a.brand {
 .row.top {
   align-items: flex-start;
 }
+.col-1 {
+  flex: 1 1 25rem;
+}
+
+.col-2 {
+  flex: 1 1 40rem;
+}
 .row.center {
   justify-content: center;
 }
@@ -83,9 +119,17 @@ a.brand {
 img {
   border-radius: 0.5rem;
 }
+
 img.medium {
   max-width: 29rem;
   width: 100%;
+}
+
+img.large {
+  /* padding: 1rem; */
+  max-width: 50rem;
+  width: 100%;
+  border-radius: 3%;
 }
 
 /* Card */
@@ -110,7 +154,6 @@ img.medium {
 /* Rating */
 .rating {
   display: flex;
-  justify-content: space-between;
 }
 .rating span {
   color: #f0c040;
@@ -118,4 +161,11 @@ img.medium {
 }
 .reviews {
   color: #404040 !important;
+}
+/* Alert */
+.success {
+  color: #20a020;
+}
+.error {
+  color: #a02020;
 }
