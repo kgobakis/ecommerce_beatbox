@@ -8,7 +8,6 @@ function App() {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
 
-  console.log(cartItems.length);
   return (
     <BrowserRouter>
       <div className="grid-container">
