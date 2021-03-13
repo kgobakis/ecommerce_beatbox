@@ -17,7 +17,6 @@ const data = {
   ],
   products: [
     {
-      id: "1",
       name: "Fly Shoes",
       category: "Shoes",
       image: "/images/product-1.jpg",
@@ -29,7 +28,6 @@ const data = {
       description: "high quality product",
     },
     {
-      id: "2",
       name: "High Top Shoes",
       category: "Shoes",
       image: "/images/product-2.jpg",
@@ -41,7 +39,6 @@ const data = {
       description: "high quality product",
     },
     {
-      id: "3",
       name: "Low Top Shoes",
       category: "Shoes",
       image: "/images/product-6.jpg",
@@ -53,7 +50,6 @@ const data = {
       description: "high quality product",
     },
     {
-      id: "4",
       name: "Different Typa Shoe",
       category: "Shoes",
       image: "/images/product-4.jpg",
@@ -65,7 +61,6 @@ const data = {
       description: "high quality product",
     },
     {
-      id: "5",
       name: "Fly Ass Shoes",
       category: "Shoes",
       image: "/images/product-5.jpg",
@@ -77,7 +72,6 @@ const data = {
       description: "high quality product",
     },
     {
-      id: "6",
       name: "Good Shoes",
       category: "Shoes",
       image: "/images/product-6.jpg",

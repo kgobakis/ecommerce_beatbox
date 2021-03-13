@@ -41,14 +41,16 @@ export default function CartScreen(props) {
                 <li key={item.product}>
                   <div className="row">
                     <div>
-                      <img
-                        src={item.image}
-                        alt={item.name}
-                        className="small"
-                      ></img>
+                      <Link to={`/product/${item.product}`}>
+                        <img
+                          src={item.image}
+                          alt={item.name}
+                          className="small"
+                        ></img>
+                      </Link>
                     </div>
                     <div className="min-30">
-                      <Link to={`/products/${item.product}`}>{item.name}</Link>
+                      <Link to={`/product/${item.product}`}>{item.name}</Link>
                     </div>
                     <div>
                       <select
