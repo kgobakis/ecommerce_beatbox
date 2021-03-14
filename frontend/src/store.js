@@ -17,6 +17,9 @@ const initialState = {
     cartItems: sessionStorage.getItem("cartItems")
       ? JSON.parse(sessionStorage.getItem("cartItems"))
       : [],
+    shippingAddress: sessionStorage.getItem("shippingAddress")
+      ? JSON.parse(sessionStorage.getItem("shippingAddress"))
+      : {},
   },
 };
 const reducer = combineReducers({
