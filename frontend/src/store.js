@@ -20,6 +20,7 @@ const initialState = {
     shippingAddress: sessionStorage.getItem("shippingAddress")
       ? JSON.parse(sessionStorage.getItem("shippingAddress"))
       : {},
+    paymentMethod: "PayPal",
   },
 };
 const reducer = combineReducers({
