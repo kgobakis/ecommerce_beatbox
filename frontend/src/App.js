@@ -3,10 +3,13 @@ import HomeScreen from "./screens/HomeScreen";
 import { BrowserRouter, Link, Route } from "react-router-dom";
 import CartScreen from "./screens/CartScreen";
 import { useSelector } from "react-redux";
+import SigninScreen from "./screens/SigninScreen";
 
 function App() {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo } = userSignin;
 
   return (
     <BrowserRouter>
@@ -22,12 +25,17 @@ function App() {
             {cartItems.length > 0 && (
               <span className="badge">{cartItems.length}</span>
             )}
-            <Link to="/signin">Sign In</Link>
+            {userInfo ? (
+              <Link to="#">{userInfo.name}</Link>
+            ) : (
+              <Link to="/signin">Sign In</Link>
+            )}
           </div>
         </header>
         <main>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen}></Route>
+          <Route path="/signin" component={SigninScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
         <footer className="row center">All rights reserved.</footer>
