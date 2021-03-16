@@ -99,9 +99,6 @@ export default function CartScreen(props) {
                 onClick={checkoutHandler}
                 className="primary block"
                 disable={cartItems.length}
-                Proceed
-                to
-                Checkout
               >
                 Proceed to Checkout
               </button>
