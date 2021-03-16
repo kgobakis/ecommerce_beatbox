@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect(
   process.env.MONGODB_URL ||
-    "mongodb+srv://kostas:rlhnkfl1@cluster0.gw7yj.mongodb.net/beatbox_shop?retryWrites=true&w=majority",
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.gw7yj.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
