@@ -13,16 +13,16 @@ import { userRegisterReducer, userSigninReducer } from "./reducers/userReducer";
 
 const initialState = {
   userSignin: {
-    userInfo: sessionStorage.getItem("userInfo")
-      ? JSON.parse(sessionStorage.getItem("userInfo"))
+    userInfo: localStorage.getItem("userInfo")
+      ? JSON.parse(localStorage.getItem("userInfo"))
       : null,
   },
   cart: {
-    cartItems: sessionStorage.getItem("cartItems")
-      ? JSON.parse(sessionStorage.getItem("cartItems"))
+    cartItems: localStorage.getItem("cartItems")
+      ? JSON.parse(localStorage.getItem("cartItems"))
       : [],
-    shippingAddress: sessionStorage.getItem("shippingAddress")
-      ? JSON.parse(sessionStorage.getItem("shippingAddress"))
+    shippingAddress: localStorage.getItem("shippingAddress")
+      ? JSON.parse(localStorage.getItem("shippingAddress"))
       : {},
     paymentMethod: "PayPal",
   },
